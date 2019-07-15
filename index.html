@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello express</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="logo">
+                    <img src="logo/logo.svg" alt="logo">
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-3">
+                    <form class="search" action="#">
+                        <input type="text" placeholder="Я шукаю..." class="search__input">
+                        <button>
+                            <img src="icons/glass.svg" alt="search">
+                        </button>
+                    </form>
+                </div>
+                <div class="col-lg-2">
+                    <div class="nav">
+                        <div class="nav__item">
+                            <img src="icons/like.svg" alt="like">
+                        </div>
+                        <div class="nav__title">Вибране</div>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="nav" id="cart">
+                        <div class="nav__item">
+                            <img src="icons/cart.svg" alt="cart">
+                            <div class="nav__badge">0</div>
+                        </div>
+                        <div class="nav__title">Кошик</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <hr>
+    <div class="container">
+        <div class="breadcrumbs">
+            <a href="#">Головна</a>
+            /
+            <a href="#">Мобільні телефони</a>
+        </div>
+    </div>
+    <div class="goods">
+        <div class="container">
+            <div class="goods__wrapper">
+                <div class="goods__item">
+                    <img class="goods__img" src="img/1.jpg" alt="phone">
+                    <div class="goods__colors">Доступно кольорів: 4</div>
+                    <div class="goods__title">
+                        Смартфон Xiaomi Redmi 6A 16 ГБ. Найкращий подарунок для молоді та батьків. Основна камера 13 Мп, повноекранний дисплей.
+                    </div>
+                    <div class="goods__price">
+                        <span>2699</span> грн/шт
+                    </div>
+                    <button class="goods__btn">Додати в кошик</button>
+                </div>
+                <div class="goods__item">
+                    <img class="goods__img" src="img/2.jpg" alt="phone">
+                    <div class="goods__colors">Доступно кольорів: 4</div>
+                    <div class="goods__title">
+                        Смартфон Xiaomi Redmi 6A 32 ГБ. Найкращий подарунок для молоді та батьків. Основна камера 13 Мп, повноекранний дисплей, сучасний дизайн. Офіційна гарантія 1 рік
+                    </div>
+                    <div class="goods__price">
+                        <span>3149</span> грн/шт
+                    </div>
+                    <button class="goods__btn">Додати в кошик</button>
+                </div>
+                <div class="goods__item">
+                    <img class="goods__img" src="img/3.jpg" alt="phone">
+                    <div class="goods__colors">Доступно кольорів: 4</div>
+                    <div class="goods__title">
+                        Смартфон HUAWEI Y6 Prime 2018
+                    </div>
+                    <div class="goods__price">
+                        <span>3999</span> грн/шт
+                    </div>
+                    <button class="goods__btn">Додати в кошик</button>
+                </div>
+                <div class="goods__item">
+                    <img class="goods__img" src="img/4.jpg" alt="phone">
+                    <div class="goods__colors">Доступно кольорів: 4</div>
+                    <div class="goods__title">
+                        Cмартфон Honor 7С Pro 32 ГБ. Безрамочний екран 5, 99".
+                    </div>
+                    <div class="goods__price">
+                        <span id="price">3299</span> грн/шт
+                    </div>
+                    <button class="goods__btn">Додати в кошик</button>
+                </div>
+                <div class="goods__item">
+                    <img class="goods__img" src="img/5.jpg" alt="phone">
+                    <div class="goods__colors">Доступно кольорів: 4</div>
+                    <div class="goods__title" id="title">
+                        Смартфон Xiaomi Redmi 5 16 ГБ з широким екраном.
+                    </div>
+                    <div class="goods__price">
+                        <span>3240</span> грн/шт
+                    </div>
+                    <button class="goods__btn">Додати в кошик</button>
+                </div>
+                <div class="goods__item">
+                    <img class="goods__img" src="img/6.jpg" alt="phone">
+                    <div class="goods__colors">Доступно кольорів: 4</div>
+                    <div class="goods__title">
+                        Cмартфон Honor 8X 64 ГБ. Безрамочний екран FullView 6,5“. Доставка від 2 днів. Новинка!【Офіційна гарантія】
+                    </div>
+                    <div class="goods__price">
+                        <span>5230</span> грн/шт
+                    </div>
+                    <button class="goods__btn">Додати в кошик</button>
+                </div>
+                <div class="goods__item">
+                    <img class="goods__img" src="img/7.jpg" alt="phone">
+                    <div class="goods__colors">Доступно кольорів: 4</div>
+                    <div class="goods__title">
+                        Смартфон HUAWEI P20 lite. Самий сучасний
+                    </div>
+                    <div class="goods__price">
+                        <span>5995</span> грн/шт
+                    </div>
+                    <button class="goods__btn">Додати в кошик</button>
+                </div>
+                <div class="goods__item">
+                    <img class="goods__img" src="img/8.jpg" alt="phone">
+                    <div class="goods__colors">Доступно кольорів: 4</div>
+                    <div class="goods__title">
+                        Смартфон Xiaomi Mi8 Lite 4 + 64 ГБ, Встигніть отримати купон!
+                    </div>
+                    <div class="goods__price">
+                        <span>7499</span> грн/шт
+                    </div>
+                    <button class="goods__btn">Додати в кошик</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart">
+        <div class="cart__body">
+            <div class="cart__title">Кошик</div>
+            <div class="cart__total">Загальна сумма: <span>0</span> грн</div>
+            <hr>
+            <div class="cart__wrapper">
+                <div class="empty">
+                    У вашому кошику поки що пусто
+                </div>
+            </div>
+            <button class="cart__confirm">Оформити замовлення</button>
+            <div class="cart__close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </div>
+        </div>
+    </div>
+
+    <div class="confirm">
+        <img src="icons/confirm.svg" alt="confirm">
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
